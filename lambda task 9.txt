@@ -1,0 +1,41 @@
+1. Data=[10,501,22,37,100,999,87,351]
+result = filter (lambda x: x > 4, data)
+print(list(result))
+
+Output: [10,501,22,37,100,999,87,351]
+
+2 Program.
+
+my_list = [1, 2,3 ,"hai","blue",4,"orange"]
+
+result = list(map(lambda x: "Integer" if isinstance(x, int) else "String", my_list))
+
+print(result)
+
+output:['Integer', 'Integer', 'Integer', 'String', 'String', 'Integer', 'String']
+
+
+3:
+from functools import reduce
+fibonacci = lambda n: reduce(lambda x, _: x + [x[-1] + x[-2]], range(n - 2), [1, 2])
+fib_series = fibonacci(50)
+print(fib_series)
+
+Output:[1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, 2971215073, 4807526976, 7778742049, 12586269025, 20365011074]
+
+4.Regular Expression
+*Email address
+Its case insensitive
+contains First name and last name.
+Begins with Alphabet (a-z)
+Contains numeric values
+contains special characters @ and .
+*Mobile number of Bangaladesh
+Country Code is +880
+It contains 11 digits 
+numberic from (0-9)
+* Telephone numbers of USA
+Country code is +1
+it contains 10 digits
+First 3 number is area code and next 7 digit is local number
+number from (0-9)
